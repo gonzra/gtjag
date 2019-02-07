@@ -1,16 +1,7 @@
-package com.gonzra.gtjag;
+package com.gonzra.gtjag.algo.hashtable;
 
 /*
- * Given an array of integers, return indices of the two numbers such that they add up to a specific target.
- *
- * You may assume that each input would have exactly one solution, and you may not use the same element twice.
- *
- * Example:
- *
- * Given nums = [2, 7, 11, 15], target = 9,
- *
- * Because nums[0] + nums[1] = 2 + 7 = 9,
- * return [0, 1].
+ * Given an int array, return the indices of the two numbers that add up to a specific target value.
  */
 
 import org.omg.PortableInterceptor.INACTIVE;
@@ -25,7 +16,20 @@ public class TwoSum {
     - Could nums be empty or null?
     - Could target be negative?
     Lets assume that nums can be null or empty. Also, lets assume that target can be negative or positive
+    - Can the same value be used twice? NO
+    - Can the input contain no solution? Lets assume the there is exactly 1 solution
+
+     Example:
+
+     Input :
+        nums = [2, 7, 11, 15]
+        target = 9,
+
+     Output:
+        [0, 1].
      */
+
+
 
     public int[] twoSum(int[] nums, int target) {
         if (nums == null || nums.length == 0) {

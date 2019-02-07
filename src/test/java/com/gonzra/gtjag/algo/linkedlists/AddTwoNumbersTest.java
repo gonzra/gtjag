@@ -1,5 +1,6 @@
-package com.gonzra.gtjag;
+package com.gonzra.gtjag.algo.linkedlists;
 
+import com.gonzra.gtjag.ds.ListNode;
 import org.junit.Assert;
 import org.junit.Test;
 

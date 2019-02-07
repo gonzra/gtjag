@@ -1,4 +1,4 @@
-package com.gonzra.gtjag;
+package com.gonzra.gtjag.ds;
 
 import java.util.Objects;
 
@@ -6,10 +6,27 @@ import java.util.Objects;
 Simple implementation of a Singly Linked List node. Just to help with the Leetcode problems
  */
 public class ListNode {
-    int val;
-    ListNode next;
+    private int val;
+    private ListNode next;
+
     public ListNode(int val){
         this.val = val;
+    }
+
+    public int getVal() {
+        return val;
+    }
+
+    public void setVal(int val) {
+        this.val = val;
+    }
+
+    public ListNode getNext() {
+        return next;
+    }
+
+    public void setNext(ListNode next) {
+        this.next = next;
     }
 
     public static ListNode createList(int ... nums) {
