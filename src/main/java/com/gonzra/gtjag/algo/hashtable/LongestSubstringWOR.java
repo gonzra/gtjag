@@ -7,8 +7,19 @@ import java.util.Set;
 
 public class LongestSubstringWOR {
 
+    /*
+    Given a string, find the length of the longest substring without repeating characters.
+     */
+
     public int lengthOfLongestSubstring2(String s){
+
+        /*
+        Questions/Assumptions:
+        - Can the inout string be null or empty: Yes, we need to code defensively for those cases
+        -
+         */
         if (s == null) {
+            //Always check what is if input is null but be able to discuss options
             throw new IllegalArgumentException("Input String s cannot be null");
         }
 
@@ -24,6 +35,7 @@ public class LongestSubstringWOR {
             char currChar = s.charAt(right);
 
             if (charToIndex.containsKey(currChar)){
+                //Ensure that left does not go backwards
                 left = Math.max(left, charToIndex.get(currChar) + 1);
             }
 
